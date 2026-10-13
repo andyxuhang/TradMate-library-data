@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-10-13",
+  "purpose": "Identity of the unchanged public upstream license text; not a dataset or permission release.",
+  "originals": [
+    {
+      "file": "TheSession-data_LICENSE.md",
+      "source": "https://raw.githubusercontent.com/adactio/TheSession-data/1d2bc823fd8f0f969b267df6c4713ab08ddccbe3/LICENSE.md",
+      "upstream_license_revision": "1d2bc823fd8f0f969b267df6c4713ab08ddccbe3",
+      "bytes": 27025,
+      "sha256": "8fdac72036a26144bf8e665f74e1c4b064ac1943fc6808307396ac19d49f4e95",
+      "scope": "Complete source text, including ODbL, custom LLM prohibition and accessibility exception."
+    }
+  ]
+}

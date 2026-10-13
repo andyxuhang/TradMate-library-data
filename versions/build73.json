@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "metadata_date": "2026-10-13",
+  "status": "metadata_only_pending_rights",
+  "app": {
+    "version": "0.31.73",
+    "build": 73
+  },
+  "database": {
+    "published": false,
+    "bytes": 36794368,
+    "sha256": "d2ad4e72f96a1b6d2fcaaca98468fc51ae91ac853c0972adc20f908c422645b0",
+    "counts": {
+      "tunes": 23300,
+      "settings": 54997,
+      "aliases": 29436
+    },
+    "candidate_import_timestamp": "2026-09-19T15:06:59.016222+00:00",
+    "integrity_check_at_local_audit": "ok",
+    "foreign_key_violation_count_at_local_audit": 0,
+    "public_download_url": null,
+    "published_dataset_tag": null
+  },
+  "upstream": {
+    "service": "https://thesession.org/",
+    "repository": "https://github.com/adactio/TheSession-data",
+    "declared_inputs": [
+      "json/tunes.json",
+      "json/tune_popularity.json"
+    ],
+    "original_data_revision": null,
+    "original_input_sha256": {
+      "json/tunes.json": null,
+      "json/tune_popularity.json": null
+    },
+    "additional_alias_input_provenance": "unverified",
+    "conversion_tool_revision": null,
+    "rating_conversion_formula": null,
+    "license_revision": "1d2bc823fd8f0f969b267df6c4713ab08ddccbe3",
+    "license_revision_is_original_data_revision": false,
+    "license_file": "licenses/TheSession-data_LICENSE.md",
+    "license_sha256": "8fdac72036a26144bf8e665f74e1c4b064ac1943fc6808307396ac19d49f4e95"
+  },
+  "rights": {
+    "distribution_confirmation": "pending",
+    "individual_content_rights": "pending",
+    "custom_llm_terms": "pending",
+    "publication_approved": false
+  },
+  "excluded_assets": [
+    "database",
+    "abc_tune_text",
+    "application_source",
+    "recognition_models_and_indexes",
+    "notation_cache",
+    "soundfonts_and_samples",
+    "private_user_data",
+    "recordings",
+    "signatures",
+    "credentials"
+  ]
+}
