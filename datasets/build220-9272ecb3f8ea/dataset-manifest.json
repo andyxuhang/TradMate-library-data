@@ -1,0 +1,245 @@
+{
+  "schema_version": 2,
+  "metadata_date": "2026-11-27",
+  "status": "published_dataset",
+  "dataset_id": "build220-9272ecb3f8ea",
+  "dataset_tag": "library-build220-9272ecb3f8ea",
+  "app": {
+    "version": "1.0.3",
+    "build": 220,
+    "source_commit": "823fbf4cb5941394d86b5dd476ba46cc6e891f47",
+    "source_repository": "https://github.com/andyxuhang/TradMate",
+    "source_repository_visibility": "private",
+    "selection": "latest committed main at publication; uncommitted local changes excluded"
+  },
+  "publication": {
+    "repository": "https://github.com/andyxuhang/TradMate-library-data",
+    "published_on": "2026-11-27",
+    "owner_publication_instruction": "explicitly approved publication on 2026-11-27",
+    "download_url": "https://raw.githubusercontent.com/andyxuhang/TradMate-library-data/library-build220-9272ecb3f8ea/datasets/build220-9272ecb3f8ea/tradmate_library.db",
+    "snapshot_url": "https://github.com/andyxuhang/TradMate-library-data/tree/library-build220-9272ecb3f8ea/datasets/build220-9272ecb3f8ea"
+  },
+  "files": [
+    {
+      "file": "tradmate_library.db",
+      "kind": "sqlite_catalog",
+      "bytes": 34881536,
+      "sha256": "9272ecb3f8eaa238106afe37f981d1eda1aed4843c8ddf3d5d956780f8939def",
+      "source_asset": "assets/library/tradmate_library.db",
+      "source_git_blob": "be67ebaf6cc31d31e699851343cae27aeb995940"
+    },
+    {
+      "file": "thesession_aliases.json",
+      "kind": "alias_search_index",
+      "bytes": 700462,
+      "sha256": "732fa0c90e9fd46e32b73446d0ffab3f00e0683256649c4fa2bd51394403a27e",
+      "source_asset": "assets/library/thesession_aliases.json",
+      "source_git_blob": "5575c10aa12e8f73a1349c26e17859ab7a693b62"
+    },
+    {
+      "file": "thesession_publishers.json",
+      "kind": "publisher_index",
+      "bytes": 1809302,
+      "sha256": "c0b20859376410b487c2844a28516669eb7f451591f3d3e334052fcdfc21819c",
+      "source_asset": "assets/library/thesession_publishers.json",
+      "source_git_blob": "1f43a5bd89b974cbd1c0ba908c9f97de9945c7bb"
+    },
+    {
+      "file": "library-changes.json",
+      "kind": "catalog_change_ledger",
+      "bytes": 264187,
+      "sha256": "046884c79b54d04fd30450f79ed2b3b9eeb7b8febb4e27e6f502442a9ac7312a",
+      "source_asset": "assets/legal/library-changes.json",
+      "source_git_blob": "a54491d7a88b3898298eb8795c57ff2a29f70c99"
+    },
+    {
+      "file": "LICENSE.md",
+      "kind": "notice",
+      "bytes": 27025,
+      "sha256": "8fdac72036a26144bf8e665f74e1c4b064ac1943fc6808307396ac19d49f4e95"
+    },
+    {
+      "file": "ATTRIBUTION.md",
+      "kind": "notice",
+      "bytes": 2061,
+      "sha256": "33d68c9808a7b86ca444d41f1d6df4f51f73adcfeaf4a12494127cab555516ad"
+    }
+  ],
+  "database": {
+    "published": true,
+    "bytes": 34881536,
+    "sha256": "9272ecb3f8eaa238106afe37f981d1eda1aed4843c8ddf3d5d956780f8939def",
+    "counts": {
+      "aliases": 29595,
+      "rating_history": 23300,
+      "tune_versions": 55412,
+      "tunes": 23423
+    },
+    "schema_version": "1",
+    "tables": {
+      "aliases": [
+        "id",
+        "tune_id",
+        "alias",
+        "normalized_alias"
+      ],
+      "metadata": [
+        "key",
+        "value"
+      ],
+      "rating_history": [
+        "catalog_tune_id",
+        "stars"
+      ],
+      "tune_versions": [
+        "id",
+        "tune_id",
+        "source_setting_id",
+        "abc",
+        "abc_hash",
+        "key_signature",
+        "meter",
+        "version_index",
+        "catalog_setting_id"
+      ],
+      "tunes": [
+        "id",
+        "source",
+        "source_tune_id",
+        "title",
+        "rhythm",
+        "meter",
+        "popularity",
+        "stars",
+        "search_text",
+        "catalog_tune_id"
+      ]
+    },
+    "integrity_check": "ok",
+    "foreign_key_violation_count": 0,
+    "rating_history_scope": "bundled previous default stars; no personal activity",
+    "source_categories": {
+      "thesession": 23423
+    },
+    "initial_import_data_revision": null,
+    "initial_import_provenance": "historical exact data revision unverified; see versions/build73.json"
+  },
+  "upstream": {
+    "service": "https://thesession.org/",
+    "repository": "https://github.com/adactio/TheSession-data",
+    "catalog_update_commit": "b3e7ba2c4a8f63a9fedb4518c1f0b0cfa279b088",
+    "catalog_updated_at": "2026-11-08T09:05:31Z",
+    "catalog_imported_at": "2026-11-09",
+    "catalog_input_files": {
+      "json/tunes.json": {
+        "bytes": 24485869,
+        "sha256": "223f5debe0f032ba5f7f5534884bd3a291fd12b431901f97184ee9b7aee351ea"
+      },
+      "json/aliases.json": {
+        "bytes": 2277169,
+        "sha256": "17c41227ad3b46e8fdcdec9cd201ee8a9109dbf35cb8b816c5039c13691d593a"
+      },
+      "json/tune_popularity.json": {
+        "bytes": 763154,
+        "sha256": "5528ba47e66511e0067214ce66e8a855c5b54fdbcce58c9956d2f325ef2e290b"
+      },
+      "LICENSE.md": {
+        "bytes": 27025,
+        "sha256": "8fdac72036a26144bf8e665f74e1c4b064ac1943fc6808307396ac19d49f4e95"
+      }
+    },
+    "alias_index": {
+      "format_version": 2,
+      "upstream": "https://github.com/adactio/TheSession-data/blob/511872c0565b46e929780928a70417694933fdbf/csv/aliases.csv",
+      "commit": "511872c0565b46e929780928a70417694933fdbf",
+      "upstream_date": "2026-11-15T10:46:34Z",
+      "sha256": "9fb68ce487df9c0ad08f016fc680b83e5a66eaec0f3485c688779383c7596cff",
+      "normalization_version": 2,
+      "report": {
+        "total": 29571,
+        "linked": 29223,
+        "duplicate": 344,
+        "invalid": 0,
+        "unmapped": 4,
+        "catalog_tunes": 23423,
+        "tunes_with_aliases": 8669,
+        "invalid_csv_lines": [],
+        "unmapped_source_ids": {
+          "6692": 1,
+          "26999": 2,
+          "27001": 1
+        }
+      }
+    },
+    "publisher_index": {
+      "schema_version": 2,
+      "upstream_commit": "b3e7ba2c4a8f63a9fedb4518c1f0b0cfa279b088",
+      "sources": {
+        "https://github.com/adactio/TheSession-data/blob/b3e7ba2c4a8f63a9fedb4518c1f0b0cfa279b088/csv/tunes.csv": "1fa88c7670112d7d88fd1bffd65d47ab304e3a01ed5c3743b9330e6f2b16035c",
+        "https://github.com/adactio/TheSession-data/blob/b3e7ba2c4a8f63a9fedb4518c1f0b0cfa279b088/csv/sets.csv": "a65dc5bebf72acc695d1584c56bdf2c1f4759c11a69732260e7b8311e7889ce9"
+      },
+      "version_sources": {
+        "https://github.com/adactio/TheSession-data/blob/b3e7ba2c4a8f63a9fedb4518c1f0b0cfa279b088/json/tunes.json": "223f5debe0f032ba5f7f5534884bd3a291fd12b431901f97184ee9b7aee351ea",
+        "https://github.com/adactio/TheSession-data/blob/b3e7ba2c4a8f63a9fedb4518c1f0b0cfa279b088/csv/sets.csv": "a65dc5bebf72acc695d1584c56bdf2c1f4759c11a69732260e7b8311e7889ce9"
+      },
+      "publisher_counts": {
+        "catalog_tunes": 23423,
+        "with_name": 23389,
+        "with_member_id": 9686
+      },
+      "version_publisher_counts": {
+        "catalog_versions": 41918,
+        "with_name": 41909,
+        "with_member_id": 20530
+      }
+    }
+  },
+  "conversion": {
+    "method": "deterministic local conversion and incremental merge; complete adapted database provided",
+    "previous_database_sha256": "d2ad4e72f96a1b6d2fcaaca98468fc51ae91ac853c0972adc20f908c422645b0",
+    "changes_from_build73": {
+      "updated_abc_versions": 959,
+      "added_tunes": 123,
+      "added_versions": 415,
+      "deduplicated_new_versions": 348,
+      "retained_reassigned_setting_paths": 22,
+      "duplicate_upstream_setting_rows": 12,
+      "added_aliases": 159
+    },
+    "retained_absent_source_tunes": 16,
+    "stable_reference_policy": "preserve local catalog IDs and existing setting paths, including reassigned source settings",
+    "rating_thresholds_tunebook_counts": [
+      10,
+      19,
+      45,
+      135,
+      438
+    ],
+    "rating_calculation": "number of thresholds reached, yielding 0 through 5 stars",
+    "changed_existing_setting_references": 1073,
+    "abc_repair_policy": "runtime score-repair results are not written back into this snapshot"
+  },
+  "licenses": {
+    "database_and_contents": "LICENSE.md (complete unchanged TheSession-data license)",
+    "license_sha256": "8fdac72036a26144bf8e665f74e1c4b064ac1943fc6808307396ac19d49f4e95",
+    "license_source_revision": "1d2bc823fd8f0f969b267df6c4713ab08ddccbe3",
+    "license_revision_is_initial_data_revision": false,
+    "additional_terms_preserved": true,
+    "individual_contents": "may be subject to additional rights; no blanket public-domain claim",
+    "publication_does_not_assert_unconditional_rights_clearance": true
+  },
+  "excluded_assets": [
+    "application_source",
+    "recognition_models_and_indexes",
+    "notation_cache",
+    "soundfonts_and_samples",
+    "album_cover_images",
+    "private_user_abc",
+    "personal_favorites_sets_setlists_and_learning_levels",
+    "usage_analytics",
+    "recordings",
+    "private_correspondence",
+    "signatures",
+    "credentials"
+  ]
+}

@@ -1,11 +1,32 @@
 # License scope
 
-This repository currently publishes documentation and license notices only. It does not distribute the TradMate database, tune contents, application source, models, soundbanks or private materials.
+This repository distributes the versioned adapted tune database and associated
+public-data indexes listed in each dataset manifest, alongside notices and
+provenance. It does not distribute the private TradMate application or its
+soundbanks, models, recordings or users' private data.
 
-The complete [TheSession-data LICENSE.md](licenses/TheSession-data_LICENSE.md) is reproduced unchanged from upstream license revision `1d2bc823fd8f0f969b267df6c4713ab08ddccbe3`. It includes the ODbL text, the custom prohibition on LLM use and its accessibility exception. Its source and byte-level identity are recorded in [the license manifest](licenses/manifest.json). It is not replaced with a generic ODbL summary.
+## The Session database and contents
 
-The upstream text describes its own scope and conditions. Reproducing it here does not grant a new permission, establish that every composition or contributed setting is covered, or claim that a future data release complies with all conditions. No blanket MIT, CC0, ODbL-only or other license is assigned to all repository contents or to the private application.
+The [complete upstream TheSession-data LICENSE.md](licenses/TheSession-data_LICENSE.md)
+is preserved unchanged. It includes the Open Database License (ODbL), the
+additional restriction concerning LLM use, and the accessibility exception.
+The same full text accompanies the published dataset in its own `LICENSE.md`.
+Read that source text for its scope and conditions; a generic ODbL summary does
+not replace it. Preserve its notices and the dataset attribution when sharing.
 
-Any future data release must identify its applicable licenses and permissions, preserve required upstream notices, and distinguish database rights from rights in individual contents. Until the necessary conditions are confirmed, no data publication is authorized by these documents.
+The [license manifest](licenses/manifest.json) identifies the original bytes.
+Individual compositions, settings and arrangements may have separate rights.
+No blanket public-domain, MIT, CC0 or ODbL-only permission is assigned to every
+asset or to the TradMate app by these documents. Publication is not an assertion
+that every independently owned work has received separate clearance.
 
-中文：本仓库当前只公开文档和许可证原文，不分发数据库。上游完整许可含 ODbL 及额外 LLM 限制、无障碍例外；保留原文并不代表获得新的授权，也不代表整个 App 或所有乐谱统一适用同一种许可证。
+## Unicode notice
+
+[Unicode_Tune_Search_LICENSE.txt](licenses/Unicode_Tune_Search_LICENSE.txt)
+preserves the notice used by TradMate's Unicode search tables. This separate
+notice does not replace or broaden The Session's license. App search code and
+generated search tables are not included in this data release.
+
+中文：本仓库公开版本化曲库与相关公开数据索引，完整保留 The Session 的原许可及
+附加条款。Unicode 另有许可说明。不同资料的许可范围分别适用，主程序、音色、模型
+及私人资料不在本次分发范围内。

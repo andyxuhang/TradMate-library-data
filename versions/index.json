@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-11-27",
+  "latest": {
+    "app_version": "1.0.3",
+    "app_build": 220,
+    "source_commit": "823fbf4cb5941394d86b5dd476ba46cc6e891f47",
+    "dataset_id": "build220-9272ecb3f8ea",
+    "tag": "library-build220-9272ecb3f8ea",
+    "manifest": "build220.json",
+    "published": true
+  },
+  "historical": [
+    {
+      "app_version": "0.31.73",
+      "app_build": 73,
+      "manifest": "build73.json",
+      "published": false,
+      "status": "historical_metadata_only_record_unchanged"
+    }
+  ]
+}

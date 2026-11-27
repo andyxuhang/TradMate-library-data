@@ -1,27 +1,50 @@
 # TradMate-library-data
 
-Public license, attribution and dataset-version information for TradMate.
+Public, versioned tune-library data, provenance, attribution and licenses for
+TradMate. The application source remains private.
 
-**Current status: documentation only. No database or tune-content download is available.** Database publication will follow only after the relevant permissions and distribution conditions are confirmed. The TradMate application source repository remains private.
+**The complete adapted SQLite catalog is now available.** This snapshot matches
+the latest committed TradMate main revision checked on 2026-11-27:
+**1.0.3 (build 220), `823fbf4cb594`**. App builds, upstream data dates and dataset
+publication dates are separate; later uncommitted local app changes are excluded.
 
-本项目用于公开 TradMate 曲库的许可证、来源署名与版本信息。**目前只有文档，尚未上传数据库或曲谱内容。** 数据库等资料将在确认授权与再分发条件后单独发布；主程序仓库保持私有。
+## Download
 
-## Public documents
+- [Download the SQLite database](https://raw.githubusercontent.com/andyxuhang/TradMate-library-data/library-build220-9272ecb3f8ea/datasets/build220-9272ecb3f8ea/tradmate_library.db) — 34,881,536 bytes (33.27 MiB).
+- [Complete snapshot: database, alias/publisher indexes, change ledger and notices](datasets/build220-9272ecb3f8ea/).
+- [Version manifest](versions/build220.json) · [Checksums](datasets/build220-9272ecb3f8ea/SHA256SUMS) · [Verification](VERIFY.md).
+- Immutable dataset tag: [`library-build220-9272ecb3f8ea`](https://github.com/andyxuhang/TradMate-library-data/tree/library-build220-9272ecb3f8ea).
 
-- [License scope](LICENSE.md) and the [complete upstream license](licenses/TheSession-data_LICENSE.md), including its custom LLM restriction and accessibility exception.
-- [Attribution and source information](ATTRIBUTION.md).
-- [Version and future release policy](VERSIONING.md).
-- [Build 73 candidate metadata](versions/build73.json), explicitly marked as unpublished.
-- [License identity manifest](licenses/manifest.json).
+| Catalog records | Count |
+| --- | ---: |
+| Tunes | 23,423 |
+| Settings / ABC versions | 55,412 |
+| Aliases in the SQLite catalog | 29,595 |
 
-This repository contains no ABC tune text, SQLite database, notation cache, recognition index/model, SoundFont/sample audio, private recording, signature, credentials or application code. The candidate's aggregate counts and hash identify a local database; they do not provide that database or establish permission to redistribute it.
+The separate alias-search index contains 29,223 linked alias strings for 8,669
+tune IDs, based on a later upstream snapshot. Its counts are not added to the
+SQLite alias count. The publisher index also has its own coverage and provenance.
 
-## Publication status
+## Sources and license
 
-As of 2026-10-13, the Build 73 candidate database has **23,300 tunes, 54,997 settings and 29,436 aliases**. Its identity is recorded in the version metadata, but the exact original upstream JSON revision and conversion/rating lineage remain unverified. The published dataset tag and verified public database download URL are **null**.
+Data originates from [The Session](https://thesession.org/) and
+[adactio/TheSession-data](https://github.com/adactio/TheSession-data).
+Read [attribution and component sources](ATTRIBUTION.md), the
+[license scope](LICENSE.md), the [complete upstream license](licenses/TheSession-data_LICENSE.md),
+and [version history](VERSIONING.md). The original license includes ODbL and
+additional contents terms; it is preserved without removing its LLM restriction
+or accessibility exception. TradMate is independent and is not an official or
+endorsed product of The Session.
 
-Public documentation is not a substitute for any applicable machine-readable database-delivery obligation. Creating this repository does not resolve license applicability, individual composition/setting rights or Apple review requirements. TradMate is independently developed and is not an official or endorsed product of The Session.
+No application source, instrument samples, finished audio, album-cover images,
+recognition models, private user collections, recordings, credentials or private
+correspondence are included. The historical [build 73 metadata](versions/build73.json)
+remains unchanged as an unpublished record from that time.
 
-## Future data release
+## 中文
 
-After the relevant permissions and conditions are confirmed and publication is approved, a separate versioned data release may provide the database, complete notices, attribution, manifest and checksums. Anonymous download and checksum verification must succeed before a release is described as available. No data release or dataset tag is created at this stage.
+已公开与主工程 Git 最新提交对应的 **1.0.3（220）完整适配曲库**，包含23,423首
+曲目、55,412个版本，以及别名索引、发布者索引、差异表、完整许可证和校验值。
+数据库主更新来源日期为2026-11-08；别名搜索索引来源日期为2026-11-15。
+本次发布日为2026-11-27。App版本、上游数据日期与公开数据版本分别记录。
+主程序保持私有；本地尚未上传的234版修改不包含在本快照内。

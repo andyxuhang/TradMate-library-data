@@ -1,10 +1,21 @@
-# Documentation-only stage. Change data rules only after publication approval.
+# Public data publication is limited to the reviewed immutable snapshot below.
 .DS_Store
 data/
-datasets/
+datasets/*
+!datasets/build220-9272ecb3f8ea/
+datasets/build220-9272ecb3f8ea/*
+!datasets/build220-9272ecb3f8ea/tradmate_library.db
+!datasets/build220-9272ecb3f8ea/thesession_aliases.json
+!datasets/build220-9272ecb3f8ea/thesession_publishers.json
+!datasets/build220-9272ecb3f8ea/library-changes.json
+!datasets/build220-9272ecb3f8ea/dataset-manifest.json
+!datasets/build220-9272ecb3f8ea/SHA256SUMS
+!datasets/build220-9272ecb3f8ea/LICENSE.md
+!datasets/build220-9272ecb3f8ea/ATTRIBUTION.md
 assets/
 private/
 *.db
+!datasets/build220-9272ecb3f8ea/tradmate_library.db
 *.db-*
 *.sqlite
 *.sqlite3

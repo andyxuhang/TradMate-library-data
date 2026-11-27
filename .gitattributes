@@ -1,2 +1,6 @@
-# Preserve the verbatim upstream license, including its original whitespace.
-licenses/TheSession-data_LICENSE.md -whitespace
+# Preserve upstream legal originals byte-for-byte.
+/licenses/TheSession-data_LICENSE.md -text -whitespace
+/licenses/Unicode_Tune_Search_LICENSE.txt -text -whitespace
+/datasets/*/LICENSE.md -text -whitespace
+# Distribute real SQLite bytes rather than line-normalized text or LFS pointers.
+/datasets/*/*.db -text -diff -merge

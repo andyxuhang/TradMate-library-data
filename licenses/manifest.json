@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "recorded_on": "2026-10-13",
-  "purpose": "Identity of the unchanged public upstream license text; not a dataset or permission release.",
+  "purpose": "Identity of preserved upstream license originals. Dataset publication is recorded separately in versions/build220.json.",
   "originals": [
     {
       "file": "TheSession-data_LICENSE.md",
@@ -10,6 +10,14 @@
       "bytes": 27025,
       "sha256": "8fdac72036a26144bf8e665f74e1c4b064ac1943fc6808307396ac19d49f4e95",
       "scope": "Complete source text, including ODbL, custom LLM prohibition and accessibility exception."
+    },
+    {
+      "file": "Unicode_Tune_Search_LICENSE.txt",
+      "source": "https://www.unicode.org/license.txt",
+      "bytes": 1995,
+      "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96",
+      "scope": "Notice used by the app Unicode search tables; not a replacement license for The Session data."
     }
-  ]
+  ],
+  "updated_on": "2026-11-27"
 }
